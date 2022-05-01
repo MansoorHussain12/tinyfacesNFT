@@ -112,3 +112,28 @@ a {
 .link--arrow:hover:after {
   margin-left: 10px;
 }
+
+/* stats */
+
+.stats {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid rgb(206, 206, 206);
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.stats--shadow {
+  border: 0;
+  box-shadow: 10px 0 20px 10px #f3f3f3;
+}
+
+.stats__heading {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.stats__detail {
+  font-size: 1.6rem;
+}
