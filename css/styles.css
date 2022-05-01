@@ -5,7 +5,7 @@
   --color-primary-light-active: #09ad55;
   --color-primary-light-hover: #0ac05e;
   --color-secondary-dark: #272d4e;
-  --color-secondary-grey: #425466;
+  --color-body-secondary-grey: #425466;
   --color-light: #f6fdfe;
 }
 
@@ -67,6 +67,11 @@ p {
 }
 
 .btn--secondary {
+  background: white;
+  color: var(--color-body-secondary-grey);
+}
+
+.btn--outline {
   background: white;
   border: 1px solid var(--color-primary-dark);
   color: var(--color-primary-dark);
@@ -136,4 +141,16 @@ a {
 
 .stats__detail {
   font-size: 1.6rem;
+}
+
+/* Lists */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
 }
