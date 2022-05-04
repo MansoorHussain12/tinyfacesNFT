@@ -4,8 +4,8 @@
   --color-primary-light: #83ebcd;
   --color-primary-light-active: #09ad55;
   --color-primary-light-hover: #0ac05e;
-  --color-secondary-dark: #272d4e;
-  --color-body-secondary-grey: #425466;
+  --color-secondary-dark: #313131;
+  --color-body-secondary-grey: #596877;
   --color-light: #f6fdfe;
 }
 
@@ -27,8 +27,14 @@ body {
   color: var(--color-secondary-grey);
 }
 
+h1,
+h2,
+h3 {
+  color: var(--color-secondary-dark);
+}
+
 h1 {
-  font-size: 7rem;
+  font-size: 5.5rem;
 }
 
 h2 {
@@ -41,6 +47,61 @@ h3 {
 
 p {
   font-size: 3.2rem;
+  color: var(--color-body-secondary-grey);
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+.link--arrow {
+  color: var(--color-primary-dark);
+}
+
+.link--arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.link--arrow:hover:after {
+  margin-left: 10px;
+}
+
+/* Lists */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+/* Icons */
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+.icon--small {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary-dark);
 }
 
 /* Buttons */
@@ -55,6 +116,10 @@ p {
   padding: 1.7rem 2.5vw;
   text-align: center;
   white-space: nowrap;
+}
+
+.btn--stretched {
+  padding: 1.5rem 3.5vw;
 }
 
 .btn--primary {
@@ -78,20 +143,10 @@ p {
   color: var(--color-primary-dark);
 }
 
-/* Icons */
-
-.icon {
-  height: 50px;
-  width: 50px;
-}
-
-.icon--small {
-  width: 40px;
-  height: 40px;
-}
-
-.icon--primary {
-  fill: var(--color-primary-dark);
+.btn--light {
+  background: white;
+  border: 0;
+  color: var(--color-primary-dark);
 }
 
 /* Cards */
@@ -106,26 +161,6 @@ p {
 
 .card-footer {
   margin-top: 2rem;
-}
-
-/* Links */
-
-a {
-  text-decoration: none;
-}
-
-.link--arrow {
-  color: var(--color-primary-dark);
-}
-
-.link--arrow::after {
-  content: "-->";
-  margin-left: 5px;
-  transition: margin 0.15s;
-}
-
-.link--arrow:hover:after {
-  margin-left: 10px;
 }
 
 /* stats */
@@ -153,16 +188,26 @@ a {
   font-size: 1.6rem;
 }
 
-/* Lists */
-
-.list {
-  list-style: none;
-  padding-left: 0;
+/* Grids */
+.grid {
+  display: grid;
+  grid-gap: 1.5rem;
 }
 
-.list--inline .list__item {
-  display: inline-block;
-  margin-right: 2rem;
+@media screen and (min-width: 888px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--hero {
+    grid-template-columns: 1.8fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Collapsibles */
@@ -198,11 +243,38 @@ a {
   opacity: 1;
 }
 
+/* Blocks */
+.block {
+  --padding-vertical: 5rem;
+  padding: 5rem 2rem;
+}
+
+.block__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.block__heading {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block {
+    padding: 5rem 10rem;
+  }
+}
+
 /* Navigation Bar */
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 2rem 1rem;
   align-items: center;
@@ -220,7 +292,7 @@ a {
 }
 
 .nav__item {
-  padding: 2rem 1.5rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
@@ -254,7 +326,7 @@ a {
   border-radius: 5px;
 }
 
-@media screen and (min-width: 828px) {
+@media screen and (min-width: 847px) {
   .nav {
     padding: 2rem 2.3rem;
   }
@@ -295,5 +367,39 @@ a {
 
   .nav-btn-container {
     display: inline;
+  }
+}
+
+/* Hero */
+
+.hero__tagline {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+  line-height: 1.7;
+}
+
+.hero__image {
+  max-width: 500px;
+  height: 500px;
+  border-radius: 10px 70px 10px 10px;
+  background: #dff5e9;
+  width: 100%;
+}
+
+@media screen and (min-width: 889px) {
+  .hero__content {
+    align-self: center;
+  }
+}
+.hero__image {
+  max-width: 400px;
+  height: 400px;
+  justify-self: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    padding-top: 0;
   }
 }
