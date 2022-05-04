@@ -46,13 +46,13 @@ p {
 /* Buttons */
 
 .btn {
-  border-radius: 10px;
+  border-radius: 9px;
   border: 0;
   cursor: pointer;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   outline: 0;
-  padding: 2rem 4rem;
+  padding: 1.7rem 2.5vw;
   text-align: center;
   white-space: nowrap;
 }
@@ -60,6 +60,7 @@ p {
 .btn--primary {
   background: var(--color-primary-dark);
   color: white;
+  box-shadow: 1px 1px 50px -25px rgb(15, 255, 67);
 }
 
 .btn--primary:hover {
@@ -82,6 +83,15 @@ p {
 .icon {
   height: 50px;
   width: 50px;
+}
+
+.icon--small {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary-dark);
 }
 
 /* Cards */
@@ -153,4 +163,137 @@ a {
 .list--inline .list__item {
   display: inline-block;
   margin-right: 2rem;
+}
+
+/* Collapsibles */
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/* Navigation Bar */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  align-items: center;
+}
+
+.nav__brand {
+  color: var(--color-primary-dark);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.nav__list {
+  margin: 0;
+  width: 100%;
+}
+
+.nav__item {
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.nav__item > a {
+  color: var(--color-body-secondary-grey);
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: var(--color-secondary-dark);
+}
+
+.nav-btn-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.nav-btn-container .btn {
+  margin: 1rem;
+}
+
+.nav__toggler {
+  cursor: pointer;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  color: var(--color-primary-light-hover);
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 828px) {
+  .nav {
+    padding: 2rem 2.3rem;
+  }
+  .nav__item {
+    padding: 2rem 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-btn-container {
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav-btn-container .btn {
+    margin: 0;
+  }
+
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav-btn-container {
+    margin: 0;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border: 0;
+  }
+
+  .nav-btn-container {
+    display: inline;
+  }
 }
