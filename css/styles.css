@@ -192,8 +192,8 @@ a {
   display: inline-block;
   text-align: center;
   border: 1px solid rgb(206, 206, 206);
-  padding-left: 3rem;
-  padding-right: 3rem;
+  width: 100%;
+  max-width: 30rem;
 }
 
 .stats--shadow {
@@ -219,6 +219,11 @@ a {
 
 @media screen and (min-width: 888px) {
   .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--1x4 {
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -518,5 +523,36 @@ a {
 
   .details__content {
     align-self: center;
+  }
+}
+
+/* About Us Block */
+
+.about-us {
+  row-gap: 8rem;
+}
+
+.about-us__content {
+  width: 100%;
+  margin-right: 5rem;
+  text-align: center;
+}
+
+.about-us__content p {
+  font-size: 1.6rem;
+  text-align: left;
+}
+.about-us__content button {
+  margin-right: 3rem;
+  margin-top: 1rem;
+}
+
+.about-us__stats {
+  gap: 2rem 2rem;
+  justify-items: center;
+}
+
+@media screen and (min-width: 888px) {
+  .about-us__content {
   }
 }
