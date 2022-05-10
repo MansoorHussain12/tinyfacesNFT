@@ -96,6 +96,17 @@ a {
   width: 50px;
 }
 
+.icon__container {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  border: 1px solid rgb(245, 235, 235);
+  box-shadow: 1px 1px 50px -25px rgb(196, 219, 201);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .icon--small {
   width: 40px;
   height: 40px;
@@ -175,13 +186,18 @@ a {
   overflow: hidden;
   padding: 2rem;
   text-align: center;
+  transition: transform 0.2s ease-out;
 }
 
-.card-body {
+.card:hover {
+  transform: translate(0, -3rem);
+}
+
+.card__body {
   color: var(--color-body-secondary-grey);
 }
 
-.card-footer {
+.card__footer {
   padding-top: 5rem;
   padding-bottom: 2rem;
 }
@@ -449,13 +465,6 @@ a {
 }
 
 /* Features */
-.card {
-  transition: transform 0.2s ease-out;
-}
-
-.card:hover {
-  transform: translate(0, -3rem);
-}
 
 .features__header {
   margin-bottom: 12rem;
@@ -552,7 +561,72 @@ a {
   justify-items: center;
 }
 
-@media screen and (min-width: 888px) {
-  .about-us__content {
-  }
+/* Testimonials */
+
+.testimonial {
+  text-align: center;
+}
+
+.card--testimonial {
+  color: var(--color-body-secondary-grey);
+  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+  padding-top: 5rem;
+}
+
+.card--testimonial .card__body {
+  line-height: 2;
+}
+
+.card--testimonial .card__footer {
+  padding-top: 2.5rem;
+}
+
+.card--testimonial:hover {
+  transform: scale(1.05);
+}
+
+.testimonial__name {
+  font-weight: 600;
+  color: var(--color-secondary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.testimonial__sign {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.testimonial__header {
+  display: inline-block;
+  max-width: 750px;
+}
+
+.testimonial-card__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.card--testimonial .card__header {
+  position: relative;
+}
+
+.quote__icon {
+  width: 50px;
+  height: 50px;
+}
+
+.quote__container {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 130%;
+  right: 40%;
+  box-shadow: 2px 5px 50px 10px #e6ebee;
 }
