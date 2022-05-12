@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
@@ -16,6 +22,374 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <header>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/">
+          <span style="color: #0ac05e">TinyFaces</span>NFT</a
+        >
+        <svg class="icon icon--primary nav__toggler">
+          <use href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="">Home</a></li>
+          <li class="nav__item"><a href="">About</a></li>
+          <li class="nav__item"><a href="">Features</a></li>
+          <li class="nav__item"><a href="">Contact</a></li>
+        </ul>
+        <span class="nav-btn-container collapsible__content">
+          <button class="btn btn--secondary">Sign In</button>
+          <button class="btn btn--primary">Sign-up</button>
+        </span>
+      </nav>
+    </header>
+    <section class="block">
+      <div class="container grid grid--1x2 grid--aligned-left">
+        <header class="block__header hero__header hero__content">
+          <h1 data-aos="zoom-in-up" class="block__heading hero__heading">
+            <span style="color: #0ac05e">Find</span> Your Favourite
+            <span style="color: #0ac05e">Character</span>
+          </h1>
+
+          <p class="hero__tagline">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vitae
+            commodi iste quaerat nemo asperiores, aliquam quia optio nobis
+            perspiciatis!
+          </p>
+          <button class="btn btn--primary btn--stretched">Join Discord</button>
+          <button class="btn btn--secondary btn--stretched">Live Demo</button>
+        </header>
+        <div data-aos="zoom-in" class="hero-image__container">
+          <img src="./images/man.png" class="hero__image" />
+          <div class="glass-card glass-card--top">
+            <h3 class="glass-card--top__heading">202K</h3>
+            <p class="glass-card--top__text">Unique<br />TinyFaces</p>
+          </div>
+          <div class="glass-card glass-card--bottom">
+            <p class="glass-card--bottom__sub-heading">Secure The Most Rare</p>
+            <div class="glass-card--bottom__container">
+              <h3 class="glass-card--bottom__heading">3,000+</h3>
+              <p class="glass-card--bottom__text">New TinyFaces Arrive</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-aos="zoom-in-up" class="block container block-features">
+      <header class="block__header features__header">
+        <h2 class="block__heading">
+          Thousands of <span style="color: #0ac05e">Features</span> Awaiting for
+          You
+        </h2>
+        <p class="block-features__para">
+          Characterised by soft lighting, vintage colour schemes and quirky
+          costumes, these generative 3D TinyFaces are the addition to your NFT
+          collection you’ve been waiting for.
+        </p>
+      </header>
+      <div data-aos="fade-up" class="grid grid--1x3">
+        <div class="card">
+          <header class="card__header">
+            <img src="images/Tiny.svg" alt="TinyFaces" />
+            <h3>Unique TinyFaces</h3>
+          </header>
+          <div class="card__body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, unde!
+          </div>
+          <footer class="card__footer">
+            <a class="link--arrow" href="#">Learn More</a>
+          </footer>
+        </div>
+        <div class="card">
+          <header class="card__header">
+            <img src="images/Special.svg" alt="Special Accessories" />
+            <h3>Huge Special Accessories</h3>
+          </header>
+          <div class="card__body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, unde!
+          </div>
+          <footer class="card__footer">
+            <a class="link--arrow" href="#">Learn More</a>
+          </footer>
+        </div>
+        <div class="card">
+          <header class="card__header">
+            <img src="images/Combination.svg" alt="Combination" />
+            <h3>500+ Combinations</h3>
+          </header>
+          <div class="card__body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, unde!
+          </div>
+          <footer class="card__footer">
+            <a class="link--arrow" href="#">Learn More</a>
+          </footer>
+        </div>
+      </div>
+    </section>
+    <section data-aos="zoom-in-up" class="block container">
+      <header class="block__header">
+        <h2 class="block__heading">
+          <span style="color: #0ac05e"> Recently</span> Added
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea vero iusto
+          itaque dicta iste? Distinctio praesentium sunt magni voluptatem
+          accusantium.
+        </p>
+      </header>
+      <div data-aos="fade-up" class="grid grid--1x3 showcase__grid">
+        <img
+          style="background: rgb(197, 174, 174)"
+          class="showcase__image"
+          src="/images/1.png"
+          alt="tree"
+        />
+        <img
+          style="background: rgb(174, 178, 197)"
+          class="showcase__image"
+          src="/images/2.png"
+          alt="tree"
+        />
+        <img
+          style="background: rgb(154, 184, 204)"
+          class="showcase__image"
+          src="/images/3.png"
+          alt="tree"
+        />
+      </div>
+    </section>
+
+    <section class="block container">
+      <article class="container grid grid--1x2 grid--aligned-left details">
+        <header
+          data-aos="fade-left"
+          class="block__header left-aligned__header details__content"
+        >
+          <h2 class="block__heading details__heading">
+            <span style="color: #0ac05e">5000+</span> Unique TinyFaces
+          </h2>
+
+          <p class="hero__tagline">
+            Each character is entirely unique and is generated by combining
+            hundreds of attributes such as colour palettes, skin tones, facial
+            traits, outfits and accessories. With nearly endless combinations,
+            all characters are guaranteed to be one of a kind.
+          </p>
+        </header>
+        <img
+          data-aos="zoom-in-right"
+          src="./images/suited.png"
+          class="hero__image"
+        />
+      </article>
+      <article
+        data-aos="fade-right"
+        class="container grid grid--1x2 grid--aligned-right details"
+      >
+        <header
+          data-aos="fade-right"
+          class="block__header left-aligned__header details__content"
+        >
+          <h2 class="block__heading details__heading">
+            <span style="color: #0ac05e">Secure</span> The Most Rare
+          </h2>
+
+          <p class="hero__tagline">
+            Even though no two Tinyfaces will ever be the same, some variations
+            are rarer than others. Watch out for special accessories and metal
+            skin tones - the rarer the attributes, the rarer your character will
+            be.
+          </p>
+        </header>
+        <img
+          data-aos="zoom-in-left"
+          src="/images/long_hair.png"
+          class="hero__image"
+        />
+      </article>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="block__heading">
+          <span style="color: #0ac05e">About</span> Us
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eius
+          ullam ab exercitationem vel eligendi cumque quisquam quis iure ad.
+        </p>
+      </header>
+      <div class="grid grid--1x2 about-us">
+        <span class="about-us__content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum optio
+            necessitatibus minus corrupti possimus vel quidem repellendus,
+            tempore facilis quasi nostrum consequuntur laudantium. Iusto placeat
+            velit, nisi maiores, quas, vel architecto similique neque corrupti
+            id atque! At aspernatur eius voluptatum veniam porro nemo incidunt,
+            enim error nobis, odit maxime non.
+          </p>
+          <button class="btn btn--primary">Learn More</button>
+          <button class="btn btn--stretched btn--outline">Watch Video</button>
+        </span>
+        <span data-aos="fade-up" class="grid grid--1x4 about-us__stats">
+          <div class="stats stats--shadow">
+            <h2 class="stats__heading">1000k</h2>
+            <p class="stats__detail">Lorem ipsum.</p>
+          </div>
+          <div class="stats">
+            <h2 class="stats__heading">1000k</h2>
+            <p class="stats__detail">Lorem ipsum.</p>
+          </div>
+          <div class="stats">
+            <h2 class="stats__heading">1000k</h2>
+            <p class="stats__detail">Lorem ipsum.</p>
+          </div>
+          <div class="stats">
+            <h2 class="stats__heading">1000k</h2>
+            <p class="stats__detail">Lorem ipsum.</p>
+          </div>
+        </span>
+      </div>
+    </section>
+    <section data-aos="zoom-in" class="block testimonial">
+      <header class="block__header testimonial__header">
+        <h2 class="block__heading">
+          What Our
+          <span style="color: #0ac05e">Users Say</span>
+        </h2>
+
+        <p class="hero__tagline">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quas
+          unde magnam iste veniam dolores saepe voluptatibus temporibus.
+        </p>
+      </header>
+
+      <div class="card card--testimonial">
+        <header class="card__header">
+          <span class="icon__container quote__container">
+            <img class="icon quote__icon" src="./images/quotation.svg" alt="" />
+          </span>
+          <div class="card__rating">
+            <img src="./images/Star.svg" alt="Rating Star" />
+            <img src="./images/Star.svg" alt="Rating Star" />
+            <img src="./images/Star.svg" alt="Rating Star" />
+            <img src="./images/Star.svg" alt="Rating Star" />
+            <img src="./images/Star.svg" alt="Rating Star" />
+          </div>
+        </header>
+        <div class="card__body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, unde!
+        </div>
+        <footer class="card__footer">
+          <p class="testimonial__name">Sam</p>
+          <p class="testimonial__sign">@Megaliko</p>
+        </footer>
+      </div>
+
+      <div class="icon--arrow__container">
+        <div class="icon icon--arrow icon--arrow-hollow">
+          <img src="./images/arrow-grey.svg" alt="" />
+        </div>
+        <div class="icon icon--arrow">
+          <img src="./images/arrow.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <div class="callout">
+      <div class="container callout__grid">
+        <img src="./images/man.png" class="hero__image callout__image" />
+        <header class="block__header left-aligned__header callout__content">
+          <h2 class="block__heading callout__heading">
+            Join The <span style="color: #0ac05e">Community</span>
+          </h2>
+          <p class="hero__tagline">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+            deleniti, voluptatibus blanditiis ut culpa excepturi saepe. Cum iste
+            alias itaque!
+          </p>
+          <button class="btn btn--primary">Learn More</button>
+          <button class="btn btn--stretched btn--outline">Watch Video</button>
+        </header>
+      </div>
+    </div>
+    <footer class="block footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">About</h2>
+              <img src="images/chevron.svg" class="icon icon--dark collapsible__chevron"/>
+              </svg>
+          </header>
+          <ul class="list footer__list collapsible__content">
+            <li class="footer__item"><a href="#">Home</a></li>
+            <li class="footer__item"><a href="#">Features</a></li>
+            <li class="footer__item"><a href="#">FAQs</a></li>
+            <li class="footer__item"><a href="#">Reviews</a></li>
+          </ul>
+        </section>
+    
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Privacy</h2>
+            <img src="images/chevron.svg" class="icon icon--dark collapsible__chevron"/>
+          </header>
+          <ul class="list footer__list collapsible__content">
+            <li class="footer__item"><a href="#">Privacy</a></li>
+            <li class="footer__item"><a href="#">Policy</a></li>
+            <li class="footer__item"><a href="#">Payment</a></li>
+            <li class="footer__item"><a href="#">Terms</a></li>
+          </ul>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Contact Us</h2>
+            <img src="images/chevron.svg" class="icon icon--dark collapsible__chevron"/>
+          </header>
+          <ul class="list footer__list collapsible__content">
+            <li class="footer__item"><a href="#">qaisraniupw @gmail.com</a></li>
+            <li class="footer__item"><a href="#">+92 348 6363588</a></li>
+            
+          </ul>
+          <ul class="list footer-icon__list">
+            
+            <li class="footer-icon__item">
+              <span class="footer-icon__container">
+                <img src="images/instagram.svg" alt="">
+              </span>
+            </li>
+            <li class="footer-icon__item">
+              <span class="footer-icon__container">
+                <img src="images/f.svg" alt="">
+              </span>
+            </li>
+            <li class="footer-icon__item">
+              <span class="footer-icon__container">
+                <img src="images/linked_in.svg" alt="">
+              </span>
+            </li>
+            <li class="footer-icon__item">
+              <span class="footer-icon__container">
+                <img src="images/twitter.svg" alt="">
+              </span>
+            </li>
+          </ul>
+        </section>
+        <section class="footer__brand">
+          <h3 class="brand__title">TinyFacesNFT</h3>
+          <p class="brand__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum
+            accusamus laboriosam quae.
+          </p>
+        </section>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © Copyright 2022 <span style="font-weight: bold;">TinyFaces.NFT</span> All rights reserved.
+        </p>
+        <ul class="list bottom__list">
+          <li class="list--inline"><a href="#">Contact Us</a></li>
+          <li class="list--inline"><a href="#">Terms</a></li>
+      </div>
+    </footer>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
