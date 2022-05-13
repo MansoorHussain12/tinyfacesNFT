@@ -914,7 +914,7 @@ a {
 .glass-card {
   position: absolute;
   background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(117, 118, 122, 0.281);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
@@ -954,7 +954,6 @@ a {
   align-items: center;
   padding: 0 1rem 1rem 1rem;
   border: 1px solid rgb(255, 252, 252);
-  box-shadow: 0;
 }
 
 .glass-card--bottom__container {

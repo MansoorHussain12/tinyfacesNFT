@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find Your Favourite Character..."
+    />
+    <meta
+      property="og:title"
+      content="TinyFacesNFT - Unique TinyFaces"
+    />
+    <meta
+      property="og:description"
+      content="TinyFacesNFT is a NFT Brand website"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://tinyfacesNFT.netlify.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,7 +57,7 @@
       </nav>
     </header>
     <section class="block">
-      <div class="container grid grid--1x2 grid--aligned-left">
+      <div class="container grid grid--1x2 hero__grid">
         <header class="block__header hero__header hero__content">
           <h1 data-aos="zoom-in-up" class="block__heading hero__heading">
             <span style="color: #0ac05e">Find</span> Your Favourite
@@ -89,7 +103,10 @@
       <div data-aos="fade-up" class="grid grid--1x3">
         <div class="card">
           <header class="card__header">
-            <img src="images/Tiny.svg" alt="TinyFaces" />
+            <svg>
+              <use href="images/sprite.svg#Tiny"></use>
+            </svg>
+           
             <h3>Unique TinyFaces</h3>
           </header>
           <div class="card__body">
@@ -101,7 +118,9 @@
         </div>
         <div class="card">
           <header class="card__header">
-            <img src="images/Special.svg" alt="Special Accessories" />
+            <svg>
+              <use href="images/sprite.svg#Special"></use>
+            </svg>
             <h3>Huge Special Accessories</h3>
           </header>
           <div class="card__body">
@@ -113,7 +132,9 @@
         </div>
         <div class="card">
           <header class="card__header">
-            <img src="images/Combination.svg" alt="Combination" />
+            <svg>
+              <use href="images/sprite.svg#Combination"></use>
+            </svg>
             <h3>500+ Combinations</h3>
           </header>
           <div class="card__body">
@@ -266,14 +287,26 @@
       <div class="card card--testimonial">
         <header class="card__header">
           <span class="icon__container quote__container">
-            <img class="icon quote__icon" src="./images/quotation.svg" alt="" />
+            <svg class="quote__icon">
+              <use  href="images/sprite.svg#quotation"></use>
+            </svg>
           </span>
           <div class="card__rating">
-            <img src="./images/Star.svg" alt="Rating Star" />
-            <img src="./images/Star.svg" alt="Rating Star" />
-            <img src="./images/Star.svg" alt="Rating Star" />
-            <img src="./images/Star.svg" alt="Rating Star" />
-            <img src="./images/Star.svg" alt="Rating Star" />
+            <svg class="card__rating__icon">
+              <use  href="images/sprite.svg#Star"></use>
+            </svg>
+             <svg class="card__rating__icon">
+              <use  href="images/sprite.svg#Star"></use>
+            </svg>
+             <svg class="card__rating__icon">
+              <use  href="images/sprite.svg#Star"></use>
+            </svg>
+             <svg class="card__rating__icon">
+              <use  href="images/sprite.svg#Star"></use>
+            </svg>
+             <svg class="card__rating__icon">
+              <use  href="images/sprite.svg#Star"></use>
+            </svg>
           </div>
         </header>
         <div class="card__body">
@@ -285,12 +318,16 @@
         </footer>
       </div>
 
-      <div class="icon--arrow__container">
-        <div class="icon icon--arrow icon--arrow-hollow">
-          <img src="./images/arrow-grey.svg" alt="" />
+      <div class="testimonial__footer__container">
+        <div class="icon icon--arrow__container icon--arrow__container--light">
+           <svg class="icon--arrow icon--arrow--grey">
+              <use  href="images/sprite.svg#arrow-grey"></use>
+            </svg>
         </div>
-        <div class="icon icon--arrow">
-          <img src="./images/arrow.svg" alt="" />
+        <div class="icon icon--arrow__container">
+          <svg class="icon--arrow">
+            <use  href="images/sprite.svg#arrow"></use>
+          </svg>
         </div>
       </div>
     </section>
@@ -316,8 +353,8 @@
         <section class="collapsible collapsible--expanded footer__section">
           <header class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">About</h2>
-              <img src="images/chevron.svg" class="icon icon--dark collapsible__chevron"/>
-              </svg>
+              <img src="images/chevron.svg" class="icon collapsible__chevron"/>
+              
           </header>
           <ul class="list footer__list collapsible__content">
             <li class="footer__item"><a href="#">Home</a></li>
@@ -353,22 +390,30 @@
             
             <li class="footer-icon__item">
               <span class="footer-icon__container">
-                <img src="images/instagram.svg" alt="">
+                <svg class="icon__footer--social">
+                  <use  href="images/sprite.svg#instagram"></use>
+                </svg>
               </span>
             </li>
             <li class="footer-icon__item">
               <span class="footer-icon__container">
-                <img src="images/f.svg" alt="">
+                <svg class="icon__footer--social">
+                  <use  href="images/sprite.svg#f"></use>
+                </svg>
               </span>
             </li>
             <li class="footer-icon__item">
               <span class="footer-icon__container">
-                <img src="images/linked_in.svg" alt="">
+                <svg class="icon__footer--social">
+                  <use  href="images/sprite.svg#linked_in"></use>
+                </svg>
               </span>
             </li>
             <li class="footer-icon__item">
               <span class="footer-icon__container">
-                <img src="images/twitter.svg" alt="">
+                <svg class="icon__footer--social">
+                  <use  href="images/sprite.svg#twitter"></use>
+                </svg>
               </span>
             </li>
           </ul>
