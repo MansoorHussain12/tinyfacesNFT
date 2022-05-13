@@ -132,12 +132,9 @@ a {
   height: 40px;
 }
 
-.icon--dark {
-}
-
 /* Arrow Icon */
 
-.icon--arrow {
+.icon--arrow__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,25 +142,24 @@ a {
   cursor: pointer;
 }
 
-.icon--arrow:hover {
+.icon--arrow__container:hover {
   background: var(--color-normal-hover);
 }
 
-.icon--arrow-hollow img {
-  transform: rotate(180deg);
+.icon--arrow__container--light {
+  background: var(--color-light);
 }
-
-.icon--arrow-hollow {
-  background: #fff;
-}
-
-.icon--arrow-hollow:hover {
+.icon--arrow__container--light:hover {
   background: var(--color-light-hover);
 }
 
-.icon--arrow__container {
-  display: flex;
-  justify-content: center;
+.icon--arrow {
+  height: 0.83rem;
+  width: 2rem;
+}
+
+.icon--arrow--grey {
+  transform: rotate(180deg);
 }
 
 /* Buttons */
@@ -307,11 +303,11 @@ a {
 
 @media screen and (min-width: 1100px) {
   .grid--aligned-left {
-    grid-template-columns: 1.8fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
   }
 
   .grid--aligned-right {
-    grid-template-columns: 1fr 1.8fr;
+    grid-template-columns: 1fr 1.5fr;
   }
 }
 
@@ -433,7 +429,7 @@ a {
 
 .nav__toggler {
   cursor: pointer;
-  color: wheat;
+  color: var(--color-normal);
 }
 
 .nav.collapsible--expanded .nav__toggler {
@@ -526,6 +522,11 @@ a {
 @media screen and (min-width: 1024px) {
   .hero {
     padding-top: 0;
+  }
+}
+@media screen and (min-width: 111px) {
+  .hero__grid {
+    grid-template-columns: 1.8fr 1fr;
   }
 }
 
@@ -647,8 +648,18 @@ a {
   margin-bottom: 3rem;
 }
 
+.testimonial__footer__container {
+  display: flex;
+  justify-content: center;
+}
+
 .card__rating {
   margin: 2rem 0 2rem 0;
+}
+
+.card__rating__icon {
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .card--testimonial .card__body {
@@ -694,6 +705,7 @@ a {
 .quote__icon {
   width: 50px;
   height: 50px;
+  fill: var(--color-normal);
 }
 
 .quote__container {
@@ -778,12 +790,18 @@ a {
   justify-content: center;
   align-items: center;
   background: var(--color-normal);
+  cursor: pointer;
 }
 
 .footer-icon__item {
   display: inline-block;
   padding-left: 0.5rem;
   margin: 0.5rem 0;
+}
+
+.icon__footer--social {
+  height: 1.844rem;
+  width: 1.844rem;
 }
 
 .footer-icon__list {
