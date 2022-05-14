@@ -234,7 +234,7 @@ a {
   border-radius: 10px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
   transition: transform 0.2s ease-out;
 }
@@ -348,6 +348,7 @@ a {
 .block {
   --padding-vertical: 5rem;
   padding: 5rem 2rem;
+  overflow: hidden;
 }
 
 .block__header {
@@ -371,7 +372,7 @@ a {
 
 .container {
   max-width: 1140px;
-  overflow: hidden;
+
   margin: 0 auto;
 }
 
@@ -524,7 +525,7 @@ a {
     padding-top: 0;
   }
 }
-@media screen and (min-width: 111px) {
+@media screen and (min-width: 1111px) {
   .hero__grid {
     grid-template-columns: 1.8fr 1fr;
   }
@@ -534,6 +535,11 @@ a {
 
 .features__header {
   margin-bottom: 12rem;
+}
+
+.feature__image {
+  height: 10rem;
+  width: 10rem;
 }
 
 /* Features Block */
